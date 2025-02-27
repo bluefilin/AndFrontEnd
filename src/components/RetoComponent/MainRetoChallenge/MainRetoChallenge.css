@@ -1,0 +1,216 @@
+.MainRetoChallenge {
+  flex: 1;
+  overflow: auto;
+  padding: 0 5px 10px 5px;
+
+  & h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  & .MainRetoChallenge-form {
+    & li {
+      display: flex;
+    }
+
+    & p {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    & h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.retoResume {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #212B36;
+
+  & .launch-challenge {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .createChallengeButtons1 {
+    display: flex;
+    justify-content: end;
+
+    .buttonFill {
+      background-color: #5E72E4;
+      color: #000000;
+    }
+
+    .buttonFill a {
+      color: #ffffff;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .buttonOutline {
+      border: 1px solid #5E72E4;
+      background-color: #ffffff;
+      color: #5E72E4;
+    }
+  }
+
+
+  .retoResume p {
+    font-size: 16px;
+    color: #212B36;
+  }
+
+  .retoResumeAtributes {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .retoResumeAtributes span {
+    font-size: 16px;
+    color: #fff;
+    background: #5D5D5D;
+    padding: 2px 10px;
+    border-radius: 8px;
+  }
+
+  .retoResumeMainInfo {
+    display: flex;
+    gap: 4%;
+  }
+
+  .retoResumeMainInfo .titulo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .retoResumeMainInfo h4 {
+    font-size: 14px;
+  }
+
+  .retoResumeMainInfo>div {
+    width: 48%;
+  }
+
+  .adjuntos {
+    padding-left: 40%;
+  }
+
+  .adjuntos div {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .adjuntos p,
+  .noVideo {
+    font-size: 10px !important;
+    background: #eaeaea;
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  .downloadIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .retoResumeMainInfo video {
+    width: 100%;
+  }
+
+  .pdf {
+    background: url(../../../assets/icons/pdf.svg) no-repeat center / contain;
+  }
+
+  .jpg {
+    background: url(../../../assets/icons/jpg.svg) no-repeat center / contain;
+  }
+
+  .retoResumeCoautor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .itcUser {
+    width: 48%;
+    display: flex;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0;
+  }
+
+  .itcUser figure {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .itcUser figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .itcUser div {
+    flex: 1;
+  }
+
+  .itcUser div h4 {
+    font-size: 18px !important;
+  }
+
+  .itcUser div p {
+    font-size: 12px;
+  }
+
+  .linksreto {
+    list-style: disc;
+    padding: 18px;
+
+    & a {
+      text-decoration: underline;
+      color: #4e4e4e;
+
+      &:hover {
+        color: #248B00;
+      }
+    }
+
+  }
+
+  .downloadFiles {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+
+    & div {
+      width: 30%;
+      padding: 12px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      border: 2px solid #D9D9D9;
+    }
+  }
+
+  .banerReto {
+    width: 100%;
+
+  }
+}

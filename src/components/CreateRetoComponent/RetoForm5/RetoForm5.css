@@ -1,0 +1,313 @@
+.retoform5 {
+    width: 100%;
+margin-top: 10px;
+    .toolKit {
+        display: flex;
+        flex-direction: column;
+
+        .toolkitButton {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            height: auto;
+
+            & input {
+                position: absolute;
+                opacity: 0;
+            }
+
+            & label {
+                width: 50%;
+                text-align: center;
+                padding: 8px 16px;
+                color: #B6B6B6;
+                font-size: 14px;
+                font-weight: 400;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+
+ 
+
+        }
+
+    }
+
+    .pitchButton {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        height: auto;
+
+        & input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        & label {
+            width: 50%;
+            text-align: center;
+            padding: 8px 16px;
+            color: #B6B6B6;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+
+
+    
+    }
+}
+
+.filesCards1 {
+    padding-right: 20px;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .singleFileCard {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        height: auto;
+
+        .fileCardFile {
+            position: relative;
+            width: 100%;
+
+            & input {
+                position: absolute;
+                opacity: 0;
+            }
+
+            & label {
+                width: 100%;
+                padding: 8px 16px;
+                color: #B6B6B6;
+                font-size: 14px;
+                font-weight: 400;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space space-between;
+                align-items: center;
+                gap: 8px;
+
+                & p {
+                    flex: 1;
+                }
+
+                & button {
+                    background: none;
+                    border: none;
+
+                }
+            }
+        }
+
+        .filesNoLoaded {
+            border: 1px solid #B6B6B6;
+        }
+
+        .filesLoaded {
+            border-bottom: 1px solid #248B00;
+            border-radius: 0 !important;
+            font-weight: bold;
+            color: #4E4E4E;
+
+            .check {
+                color: #248B00;
+            }
+        }
+
+    }
+
+
+    .addFileButton {
+        width: 70%;
+        padding: 3px 12px;
+        border: 2px solid #B6B6B6;
+        cursor: pointer;
+        background: #fcfbfb;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+
+        & span {
+            font-size: 14px;
+            color: #B6B6B6;
+            font-weight: 700;
+        }
+    }
+
+    .addFileButtonA {
+        width: 100%;
+        padding: 3px 12px;
+        border: none;
+        cursor: pointer;
+        background: #C4C4C4;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+
+        & span {
+            font-size: 14px;
+            color: #7B61FF;
+            font-weight: 900;
+        }
+    }
+}
+
+.links1 {
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+    border-left: 1px solid #cccccc;
+
+    margin-right: 10px;
+    padding-left: 20px;
+
+    .linksInfo {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & div {
+            flex: 1;
+
+            & label {
+                margin-bottom: 0;
+            }
+
+        }
+
+        & button {
+            width: 70%;
+            padding: 3px 12px;
+            border: 2px solid #B6B6B6;
+            cursor: pointer;
+            background: #fcfbfb;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+
+            & span {
+                font-size: 14px;
+                color: #B6B6B6;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.linksInputs {
+    width: 100%;
+    position: relative;
+
+    & label {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    & input {
+        padding: 8px 16px;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #B6B6B6;
+        margin-bottom: 10px;
+    }
+
+    & button {
+        position: absolute;
+        z-index: 100;
+        right: 14px;
+        bottom: 14px;
+        background: none;
+        border: none;
+
+        & img {
+            width: 20px;
+        }
+    }
+
+}
+
+.deletebutton {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    transform: translateX(0%);
+}
+
+
+.Coments {
+    margin-top: -20px;
+
+    & .area {
+        margin-top: -27px;
+        padding: 15px px 5px 40px;
+        position: relative;
+
+        & textarea {
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            padding: 15px 40px 5px 40px;
+            outline: none;
+            border: none;
+            position: relative;
+        }
+
+        .deleteButtonC {
+            background: none;
+            border: none;
+            position: relative;
+            top: -50px;
+            right: -92%;
+            transform: translateY(-50);
+        }
+
+        & .commentIcon {
+            position: absolute;
+            top: 40%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        & label {
+            left: 25px;
+            color: #000000 !important;
+        }
+
+
+    }
+}
+
+
+.filesCards1,
+.links {
+    width: 48%;
+    /* Ajusta según sea necesario */
+}
+
+.column {
+    display: flex;
+    margin: 0 15px;
+}

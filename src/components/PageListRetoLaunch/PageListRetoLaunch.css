@@ -1,0 +1,111 @@
+.elementsListLaunch {
+    margin-top: 20px;
+    /* display: flex; */
+    justify-content: space-around;
+
+  
+    & .carrusel {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: flex-start;
+
+    }
+
+
+    .campainChallenge {
+        width: 45%;
+        background: #fff;
+        border-radius: 10px;
+
+        & figure {
+            width: 100%;
+            height: 204px;
+            background: url(../../assets/img/retoCard.jpg)no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px 10px 0 0;
+
+            & h4 {
+                padding: 10px 40px;
+                background: url(../../assets/icons/innovaType.svg) no-repeat 10px 10px, linear-gradient(180deg, rgba(69, 65, 79, 0.20) 0%, rgba(69, 65, 79, 0.50) 23.96%);
+                color: #fff;
+                border-radius: 10px 10px 0 0;
+            }
+
+            & p {
+                text-align: right;
+                color: #fff;
+                padding: 10px;
+                background: linear-gradient(180deg, rgba(69, 65, 79, 0.20) 0%, rgba(69, 65, 79, 0.80) 23.96%);
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+
+                & span {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../../assets/icons/clock.svg) no-repeat center center / 16px;
+                }
+            }
+        }
+
+        .campainChallengeContent {
+            padding: 15px 10px;
+            background: #E9EDF4;
+& .bottones{
+   display: flex; 
+   justify-content: center;
+}
+            & p {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                font-weight: 700;
+            }
+
+            & div {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+
+                & button {
+                    padding: 16px 8px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    width: 45%;
+                    cursor: pointer;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        filter: brightness(80%);
+                    }
+                }
+
+                & button:nth-child(1) {
+                    border: 1px solid #5E72E4;
+                    background: #FFF;
+                    color: #5E72E4;
+                }
+
+                & button:nth-child(2) {
+                    border: none;
+                    background: #5E72E4;
+                    color: #FFF;
+
+                    & a {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}

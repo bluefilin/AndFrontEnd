@@ -1,0 +1,1 @@
+export { RetosParam } from './RetosParam';

@@ -1,0 +1,36 @@
+.prevNextI{
+    font-weight: 800;
+}
+.prevNextDisableI{
+    color:#ccc;
+}
+.ideaChallengeBox {
+    margin-bottom: 10px;
+}
+.ideaChallengeBox div:nth-child(2) h3{ /* Título del contenido principal */
+    width: 100%;
+    overflow: hidden;
+    height: 26px;
+    font-size: 20px;
+    color: #4E4E4E;
+}
+.ideaChallengeBox div:nth-child(2) p{ /* Texto del contenido principal */
+    color: #4E4E4E;
+    font-size: 14px;
+    flex: 1;
+}
+.ideaChallengeBox img { /* Estilo adicional para la imagen secundaria (si existe) */
+    border-radius: 50px;
+    margin-right: 35px; 
+}
+.imgIdeasComite{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+.contendoIdeaComite{
+    margin: 2px;
+}

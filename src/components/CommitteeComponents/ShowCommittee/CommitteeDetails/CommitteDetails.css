@@ -1,0 +1,87 @@
+.detailsCommittee {
+  & div {
+    display: flex;
+    gap: 10px;
+
+    & p {
+      padding: 5px 0 !important;
+      font-size: 0.9rem;
+      font-weight: 700;
+
+      &:last-child {
+        font-weight: 300;
+      }
+    }
+
+    & .normal-text {
+      font-weight: 300;
+      /* Quita la negrita */
+      margin-bottom: 8px;
+      /* Ajusta el espaciado entre los párrafos */
+      font-size: 0.9rem;
+    }
+
+    
+  }
+  & .Header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.membersCommittee {
+    width: 100%;
+    height: auto;
+    display: flex;    
+    flex-direction: column;
+    gap: 12px;
+}
+.member {
+    border: 1px solid #E9EDF4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    gap: 8px
+}
+.member div:first-child {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.member div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.member div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.member div:nth-child(2) p {
+    width: 100%;
+    overflow: hidden;
+    height: 20px;
+    font-size: 14px;
+}  
+.inputCheckComite {
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border-radius: 4px;
+  border: 2px solid #E1E1E1;
+  background-color: #F1F4FF;
+  margin-left: auto;
+}
+.inputCheckComite:checked {
+  background-image: url("../../assets/icons/check-blue.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 11px;
+  background-position: center;
+  font-weight: 700;
+  border: 2px solid #3AB523;
+  background-image: url("../../../../assets/icons/NikeGreen.svg");
+  background-color: #F1F4FF;
+}

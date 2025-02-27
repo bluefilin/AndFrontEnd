@@ -1,0 +1,66 @@
+.loginform {
+    width: 50%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    .loginIntro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        gap:5px;
+        & h1{
+            font-size: 2em;
+        }
+    }
+    & form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 30px;
+        gap: 5px;
+        & input{
+            background: none;
+            border: 1px solid #45414F;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+        & button{
+            width: 100%;
+            padding: 10px 20px;
+            background: #5E72E4;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            margin-top: 12px;
+            &:hover{
+                background:#89A1FF ;
+            }
+        }
+        & span{
+            width: 20px;
+            height: 0 ;
+            left: 92%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top:-26px;
+        }
+        .errorMsn{
+            text-align: center;
+            color:#F80031;
+        }
+        .doYouForgot{
+            cursor: pointer;
+            text-align: right;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+  }
+ 

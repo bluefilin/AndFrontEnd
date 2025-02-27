@@ -1,0 +1,1 @@
+export { IdeaForm1 } from './IdeaForm1';

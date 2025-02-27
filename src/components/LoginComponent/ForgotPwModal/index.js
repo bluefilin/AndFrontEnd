@@ -1,0 +1,1 @@
+export { ForgotPwModal } from './ForgotPwModal';

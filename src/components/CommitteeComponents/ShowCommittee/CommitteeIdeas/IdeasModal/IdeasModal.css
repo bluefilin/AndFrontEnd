@@ -1,0 +1,98 @@
+.modalIdeas { 
+    background: rgba(255, 255, 255,0.7);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 70;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalIdeasCommittee {
+    height: 90vh;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    /* padding: 50px; */
+    border-radius: 20px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #4e4e4e;
+    overflow-y: auto;
+    position: relative;
+}
+
+.ideasComiteTitle {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ideasComiteSubtitle {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B6B6B6;
+}
+
+
+.iconCloseIdeas {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contenedorListIdeas{    
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 20px;
+}
+
+.separar-izquierda {
+    margin-left: 40px;
+  }
+
+.buttonEndIdeaComite {
+    padding: 20px 0px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 20px auto;
+  
+    .btn10 {
+      background: none;
+      border: 2px solid #5E72E4;
+      color: #5E72E4;
+      border-radius: 8px;
+      width: 120px;
+      height: 50px;
+      margin-right: 50px;
+  
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+  
+    .btn11 {
+      background: #5E72E4;
+      color: #fff;
+      white-space: nowrap;
+      border: none;
+      border-radius: 8px;
+      width: 120px;
+      height: 50px;
+  
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+}

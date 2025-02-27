@@ -1,0 +1,178 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  .commentsTittle{
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h3{
+        font-size: 18px;
+        color:#4e4e4e;
+        margin-bottom: 0;
+    }
+    & p{
+        padding-left: 26px;
+        font-size: 16px;
+        color: #212b36; 
+        font-weight: 500;   
+        background: url(../../assets/icons/filterBlack.svg) no-repeat;          
+    }
+  }
+  .commentsInput{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap:15px;
+    & figure{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & textarea{
+
+        flex: 1;
+        display: block;
+        background: #EAEAEA;
+        border-radius: 6px;
+        border: none;
+        height: 65px;
+        padding-right: 30px;
+        outline: #4e4e4e;
+        padding: 10px;
+        /* min-height: 36px; */
+        /* max-height: 36px; */
+        /* form-sizing: content; */
+    }
+    & button{
+      position: absolute;
+      right: 13px;
+      bottom: 10px;
+      z-index:10;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: url(../../assets/icons/sendArror.svg) no-repeat;
+      cursor: pointer;
+      &:hover{
+        filter: brightness(-10%);
+      }
+    }
+    .label-options{
+      width: 150px;
+      height: 150px;
+      padding: 6px;
+      font-size: 12px;
+      overflow: auto;
+      position: absolute;
+      background: #ccc;
+      z-index: 20;
+      top:5px;
+      left: 90px;
+      &::-webkit-scrollbar-track{
+        background: none;
+      }
+      & li{
+        padding: 2px 0;
+        &:hover{
+          background: #ddd;
+        }
+      }
+    }
+  }
+  .filterOptions{
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap:15px;
+    & select{
+      border: none;
+      outline: none;
+      padding-left: 25px;
+      max-width: 20%;
+      width: 200px;
+      background: url(../../assets/icons/globe.svg) no-repeat;
+      color: #212B36;
+      overflow: hidden;
+      & option{border: none}
+    }
+  }
+  .commentBlock{
+    padding: 10px 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #4E4E4E;
+    margin-left: 20px;
+    & h4{
+      display: flex;
+      align-items: center;
+      gap:20px;
+      padding-bottom: 20px;
+      & div{
+        background: #EAEAEA;
+        border-radius: 8px;
+        padding: 5px 10px;
+
+        & span{
+          display: flex;
+          gap:10px;
+          font-size: 14px;
+          & p{
+            width: 20px;
+            transform: rotate(90deg) scaleY(1.5) translate(5px, 5px);
+          }
+        }
+      }
+    }
+  }
+  .commentSingular{
+    border-left: 1px solid #C4C4C4;
+    padding: 2px 10px 10px 25px;
+    position: relative;
+    &:last-child{
+      border: none;
+    }
+    & h5{
+      display: flex;
+      align-items: center;
+      gap:10px;
+      padding: 0 0 8px 0;
+      & button{
+        width: 20px; 
+        height: 20px;
+        border: none;
+      }
+      .buttonless{
+        background: url(../../assets/icons/buttonPlus.svg) no-repeat center;
+      }
+      .buttonplus{
+        background: url(../../assets/icons/buttonLess.svg) no-repeat center;
+      }
+    }
+    & figure{
+      width: 25px;
+      height: 25px;
+      background: #ccc;
+      position: absolute;
+      border-radius: 50%;
+      top:0;
+      left: -12px;
+      z-index: 100px;
+      overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & p{font-size: 14px;}
+    
+  }
+}

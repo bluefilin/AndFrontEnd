@@ -1,0 +1,40 @@
+.loginbanner {
+  width: 50%;
+  background: url(../../../assets/img/banner1.png)center;
+  display: flex;
+  align-items: center;
+  border-radius: 0 14px 14px 0;
+  .loginText{
+    width: 45%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    & p{
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #E19A52;
+        border-right: 5px solid #E19A52;
+        border-bottom: 1px solid #E19A52 ;
+        border-left: 1px solid #E19A52;
+        border-radius: 10px 0 0 10px;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+    }
+    & a{
+        border: 1px solid #E19A52;
+        padding: 5px 11px;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        transition: all .4s;
+        &:hover{
+            background: #E19A52;
+        }
+    }
+  }
+}

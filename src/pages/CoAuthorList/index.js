@@ -1,0 +1,1 @@
+export { CoAuthorList } from './CoAuthorList';

@@ -1,0 +1,92 @@
+.idealist {
+    & form {
+        border-bottom: 1px solid #ACB6BE;
+        width: 100%;
+        padding: 20px 3px;
+
+        .filterView {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & input {
+                width: 50%;
+                background: #F8FAFC url(../../assets/icons/searchGlass.svg) no-repeat 10px center;
+                padding: 13px 13px 13px 38px;
+                outline: none;
+                border: 1px solid #E7E7E7;
+                border-radius: 21px;
+            }
+
+            & input::placeholder {
+                color: #ACB6BE;
+                font-size: 0.8rem;
+            }
+
+            & input:focus {
+                border-color: #cdcbcb;
+            }
+
+            & span {
+                font-size: 0.9rem;
+                padding-left: 30px;
+                background: url(../../assets/icons/filter.svg) no-repeat left center;
+                cursor: pointer;
+            }
+
+            & span:hover {
+                font-weight: 700;
+            }
+        }
+
+        .filterOption {
+            overflow: hidden;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap:15px;
+            margin-top: 10px;
+            
+            font-size:14px;
+            & select{
+                border: none;
+                width: 20%;
+                padding-left: 18px;
+                background: url(../../assets/icons/globe.svg) no-repeat;
+            }
+            .dateRange{
+                padding-left: 20px;
+                background: url(../../assets/icons/globe.svg) no-repeat left center;
+                width: 20%;
+                & p{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    overflow: hidden;
+                    & span:first-child{
+                        flex: 1;
+                        width: auto;
+                        overflow: hidden;
+                    }
+                    & span:last-child{
+                        transform: rotate(-90deg) scaleX(.6);
+                        font-weight: 900;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.calendarElement {
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%);
+    border: 1px solid #ccc;
+    z-index: 99;
+}
+.calendarHide{
+    display: none !important;
+}

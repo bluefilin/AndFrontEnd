@@ -1,0 +1,1 @@
+export { ModalIdea } from './ModalIdea';

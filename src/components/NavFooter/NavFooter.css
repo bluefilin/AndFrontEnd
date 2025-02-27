@@ -1,0 +1,27 @@
+.navfooter {
+  padding: 23px;
+  width: 100%;
+}
+.navfooter > div{
+    border-top: 1px solid #ACB6BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.navfooter a{
+    display: flex;
+    gap:8px;
+    padding: 12px 0;
+    color: #222
+}
+.navfooter a:hover{
+    font-weight: 700;
+}
+.navfooter a figure{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,132 @@
+.ideasparam {
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 30px) ;
+  overflow: auto;
+}
+.ideasparam form{
+  background: #F2F5F7;
+  border-radius: 16px;
+  width: 300px;
+  padding:15px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  color: #505D68;
+  & h3{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0 16px 0;
+  }
+  .validateCriterion{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    & div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & p{
+        flex: 1;
+      }
+      & label{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        margin-left: 5px;
+        & img{
+          position: absolute;
+          top: 0;
+          left:0;
+        }
+      }
+    }
+  }
+  .asignCriterion{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    & select{
+      padding: 8px 14px;
+      outline: #C2D1D9;
+      border: 1px solid #C2D1D9;
+      color: #C2D1D9;
+      border-radius: 3px;
+    }
+  }
+  & button{
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #C2D1D9;
+    color: #363636;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #C2D1D9;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+.open{border-radius: 16px 16px 0 0;}
+.select-header {
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #C2D1D9;
+}
+.select-header::after {
+  content: "\25BE"; /* Código unicode para una flecha hacia abajo */
+
+}
+.custom-options {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.custom-options div{
+  width: 100%;
+  padding: 8px;
+  border-top: 1px solid #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-options div span{
+  width: 24px;
+  height: 24px;
+  background: url(../../../assets/icons/cruz.svg) center center / 14px 14px no-repeat;
+}
+.option {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #e0e0e0;
+}
+.youMust{
+  font-size:12px;
+  color:#f66;
+}

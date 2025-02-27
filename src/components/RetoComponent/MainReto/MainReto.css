@@ -1,0 +1,211 @@
+
+.mainreto {
+  flex: 1;
+  overflow: auto;
+  padding: 0 5px 10px 5px;
+
+
+.retoResume {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #4e4e4e;
+}
+
+.retoResume p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.retoResumeAtributes {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.retoResumeAtributes span {
+  font-size: 16px;
+  color: #fff;
+  background: #5D5D5D;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.retoResumeMainInfo {
+  display: flex;
+  gap: 4%;
+}
+
+.retoResumeMainInfo .titulo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.retoResumeMainInfo h4 {
+  font-size: 14px;
+}
+
+.retoResumeMainInfo>div {
+  width: 48%;
+}
+
+.adjuntos {
+  padding-left: 40%;
+}
+
+.adjuntos div {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.adjuntos p,
+.noVideo {
+  font-size: 10px !important;
+  background: #eaeaea;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.downloadIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.retoResumeMainInfo video {
+  width: 100%;
+}
+
+.pdf {
+  background: url(../../../assets/icons/pdf.svg) no-repeat center / contain;
+}
+
+.jpg {
+  background: url(../../../assets/icons/jpg.svg) no-repeat center / contain;
+}
+
+.retoResumeCoautor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.itcUser {
+  width: 48%;
+  display: flex;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.itcUser figure {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.itcUser figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itcUser div {
+  flex: 1;
+}
+
+.itcUser div h4 {
+  font-size: 18px !important;
+}
+
+.itcUser div p {
+  font-size: 12px;
+}
+
+.linksReto {
+  list-style: disc;
+  padding: 18px;
+
+  & a {
+    text-decoration: underline;
+    color: #4e4e4e;
+
+    &:hover {
+      color: #248B00;
+    }
+  }
+
+}
+
+.downloadFiles {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+
+  & div {
+    width: 30%;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid #D9D9D9;
+  }
+}
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4E4E4E;
+  margin-right: 10px;
+
+}
+
+.tab-buttons button {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4E4E4E;
+  font-weight: bold;
+  transition: border-color 0.3s;
+}
+
+.tab-buttons button.active {
+  border-bottom: 2px solid #4E4E4E;
+  color: #4E4E4E;
+}
+.tab-buttons-scroll {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4E4E4E;
+  margin-right: 10px;
+
+}
+
+.tab-buttons-scroll button {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4E4E4E;
+  font-weight: bold;
+  transition: border-color 0.3s;
+}
+
+.tab-buttons-scroll button.active {
+  background-color: #EFF1FC;
+  border-radius: 8px;
+  color: #4E4E4E;
+}
+}

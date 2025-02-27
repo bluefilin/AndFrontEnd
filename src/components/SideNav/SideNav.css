@@ -1,0 +1,65 @@
+.sideNav {
+    width: 100%;
+    list-style: none;
+    font-weight: 500;
+    overflow: auto;
+    flex: 1;
+  }
+  .sideNav a{
+    color:#222;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0 10px 23px;
+  }
+  .sideNav a:hover{font-weight: 700;}
+  .subMenu a{
+    padding-left: 58px;
+  }
+  .subMenu a:hover{font-weight: 700;}
+  .subMenu {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; 
+    background: #fff;
+    height: auto;
+    }
+  .sideNav span{
+    color:#222;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0 10px 23px;
+
+  }
+  .sideNav span:hover{font-weight: 700;}
+  .mainMenu{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  
+  }
+  .mainMenuActive{
+    border-right: 2px solid rgba(8, 0, 196, 1);
+    background: rgba(8, 0, 196, 0.10);
+    & p{
+      color: #0800C4;
+      font-weight: 700;
+    }
+    .activeIconStroke{stroke:#0800C4}
+    .activeIcon{fill:#0800C4}
+  }
+  .mainMenu figure:first-child{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sideNav .active{
+    font-weight: 700;
+    color: #0800C4;
+    border-right: 2px solid rgba(8, 0, 196, 1);
+    background: rgba(8, 0, 196, 0.10);
+    .activeIcon{fill:#0800C4}
+    .activeIconStroke{stroke:#0800C4}
+  }

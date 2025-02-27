@@ -1,0 +1,38 @@
+.committedate {
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  border-right: 1px solid #ccc ;
+  background: none;
+  box-sizing: border-box;
+  flex: none !important;
+  padding: 15px 0 0 15px;
+  padding-right: 20px !important;
+  
+  & .Header{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+ 
+ .error-text {
+  color: brown;
+}
+
+.date-input-container.error input[type="date"] {
+  border: 1px solid red;
+  
+}
+
+.initial-hour-input-container.error input[type="time"],
+.end-hour-input-container.error input[type="time"] {
+  border: 1px solid red;
+}
+.black-text {
+  color: black;
+}
+
+/* Agrega estilos para el texto rojo */
+.red-text {
+  color: red;
+}

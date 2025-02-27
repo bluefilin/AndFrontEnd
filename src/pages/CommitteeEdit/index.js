@@ -1,0 +1,1 @@
+export { default as CommitteeEdit } from './CommitteeEdit';

@@ -1,0 +1,214 @@
+.showcommittee {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+
+  & >section {
+    flex: none !important;
+    padding-right: 10px !important;
+
+    &:first-child {
+      width: calc(65% - 8px);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #ccc;
+      gap: 15px;
+
+      & article:first-child { 
+        & p {
+          padding: 0;
+        }
+
+        & div {
+          padding: 10px 0;    
+          grid-template-columns: 2fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 0px 0px;
+
+          & label {
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+      & article:last-child {
+        .ideasCommittee {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .individualCommittee {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid #E9EDF4;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 18px;
+            border-radius: 16px;
+
+            /* Mantenemos el borde redondeado de la tarjeta */
+            & figure {
+              width: 65px;
+              height: 65px;
+              overflow: hidden;
+              border-radius: 50%;
+
+              & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                /* Mantenemos la imagen redonda en la tarjeta del miembro */
+              }
+            }
+
+            .individualCommitteeTexts {
+              flex: 1;
+
+              & p {
+                padding: 1px 0 !important;
+                font-weight: 700;
+                font-size: 0.8rem;
+
+                & span {
+                  font-weight: 400;
+                }
+              }
+            }
+
+            .individualCommitteeIcons {
+              margin-bottom: auto;
+              display: flex;
+              gap: 15px;
+              cursor: pointer;
+
+              & img {
+                filter: drop-shadow(0 0 1px rgba(58, 96, 135, 0));
+                transition: all 0.2s;
+
+                &:hover {
+                  filter: drop-shadow(0 0 1px rgba(58, 96, 135, 0.8));
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      width: calc(35% - 8px);
+
+      .detailsCommittee {
+        & div {
+          display: flex;
+          gap: 10px;
+          & p {
+            padding: 5px 0 !important;
+            font-size: 0.9rem;
+            font-weight: 700;
+
+            &:last-child {
+              font-weight: 300;
+            }
+          }
+          & .normal-text {  
+            font-weight: 300;
+            /* Quita la negrita */
+            margin-bottom: 8px;
+            /* Ajusta el espaciado entre los párrafos */
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .membersCommittee {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .member {
+        border: 1px solid #E9EDF4;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        gap: 8px
+      }
+
+      .member div:first-child {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .member div:first-child img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .member div:nth-child(2) {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .member div:nth-child(2) p {
+        width: 100%;
+        overflow: hidden;
+        height: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.buttonEnd {
+  padding: 20px 0px;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  .btn1 {
+    background: none;
+    border: 2px solid #5E72E4;
+    color: #5E72E4;
+    border-radius: 8px;
+    width: 120px;
+    height: 50px;
+    margin-right: 50px;
+
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+
+  .btn2 {
+    background: #5E72E4;
+    color: #fff;
+    white-space: nowrap;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 50px;
+
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+  }
+.custom-image {
+  width: 20px; /* Ajusta el ancho deseado para las imágenes */
+  height: 20px; /* Ajusta la altura deseada para las imágenes */
+  margin-left: auto;
+  margin-right: 10px; /* Ajusta el espacio entre las imágenes */  
+}

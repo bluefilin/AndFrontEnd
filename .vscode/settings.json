@@ -1,0 +1,7 @@
+{
+    "reactCreateComponent.settings.quickSuggestions": [
+        "src/components",
+        "app/components",
+        "src/components/PointsComponents"
+    ]
+}

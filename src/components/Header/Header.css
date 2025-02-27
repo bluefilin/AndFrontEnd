@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:25px;
+}
+.header>figure:first-child{
+    padding: 35px 0 0 21px;
+}
+.header figure img{
+    width: 220px;
+}

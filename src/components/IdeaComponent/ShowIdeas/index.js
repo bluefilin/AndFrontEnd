@@ -1,0 +1,1 @@
+export { ShowIdeas } from './ShowIdeas';

@@ -1,0 +1,9 @@
+.pointsAdmin{
+    & table{
+        & tbody{
+            & tr:nth-child(odd){
+                background: #eef4f9;
+            }
+        }
+    }
+}

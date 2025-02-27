@@ -1,0 +1,59 @@
+.pagelistcommittee {
+    .elementsList {
+        padding: 20px 0;
+
+        .committeeItem {
+            padding: 8px 16px;
+            border: 1px solid #E9EDF4;
+            border-radius: 8px;
+            display: flex;
+            color: #212B36;
+            align-items: center;
+            gap: 15px;
+
+            & figure {
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+                border-radius: 50%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .committeeListeElement {
+                flex: 1;
+
+                & h3 {
+                    font-size: 16px;
+                }
+
+                & p {
+                    font-size: 13px;
+                    font-weight: 700;
+                    padding: 1px 0;
+
+                    & span {
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .committeeParticipants {
+                display: flex;
+                margin-top: auto;
+                font-size: 13px;
+
+                & span {
+                    padding-left: 5px;
+                    font-weight: 700;
+                    color: #FFB300;
+                }
+            }
+        }
+    }
+
+}

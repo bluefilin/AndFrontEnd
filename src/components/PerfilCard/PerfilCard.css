@@ -1,0 +1,34 @@
+.perfilCard {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 23px;
+}
+.perfilCard figure {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.perfilCard figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfilDetails{flex: 1;}
+.perfilDetails h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.perfilDetails span {
+    font-size: .8rem;
+}
+.perfilDetails p{
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+  

@@ -1,0 +1,11 @@
+.showideas {
+  flex: 1;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 45px);
+  display: flex;
+  flex-direction: column;
+}
+
+
